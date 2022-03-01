@@ -40,11 +40,11 @@ python preformer_feature.py
 ```
 ## 論文の結果の再現（テスト）
 UCF-CrimeデータセットにおけるフレームレベルのAUCの性能を示す表2の結果を再現．
-$ d_a=64,r=3 $のとき
+<img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " />のとき
 ```
 python test.py --da 64 --r 3
 ```
-$ d_a=128,r=7 $のとき
+<img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " />のとき
 ```
 python test.py --da 128 --r 7
 ```
@@ -54,8 +54,8 @@ python test.py --da 128 --r 7
 |GCN-Anomaly|82.12|
 |RTFM|84.30|
 |----|----|
-|Ours($ d_a=64,r=3 $)|84.74|
-|Ours($ d_a=128,r=7 $)|84.91|
+|Ours(<img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " />)|84.74|
+|Ours(<img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " />)|84.91|
 
 ## 学習
 ```
