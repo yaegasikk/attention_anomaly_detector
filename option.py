@@ -13,6 +13,6 @@ parser.add_argument('--save-mil-name',default='bi-lstm-mil-max',help='save model
 parser.add_argument('--save-videoclassifier-name',default='VideoClasifier-iter-max',help='save model name (video classifier model)')
 parser.add_argument('--T',default=32,type=int,help='parameter T')
 parser.add_argument('--seed',default=1111,type=int,help='random seed')
-parser.add_argument('--test-split-size',default=28,type=int)
+parser.add_argument('--test-split-size',default=32,type=int)
 parser.add_argument('--da',default=64,type=int)
 parser.add_argument('--r',default=3,type=int)

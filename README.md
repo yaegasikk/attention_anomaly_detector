@@ -43,11 +43,11 @@ UCF-CrimeデータセットにおけるフレームレベルのAUCの性能を�
 
 <img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " /> のとき
 ```
-python test.py --da 64 --r 3 --seed 9111
+python test.py --da 64 --r 3 --seed 9111 --test-split-size 28
 ```
 <img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " /> のとき
 ```
-python test.py --da 128 --r 7 --seed 9111
+python test.py --da 128 --r 7 --seed 9111 --test-split-size 28
 ```
 | model | AUC(%)|
 |----|----|
