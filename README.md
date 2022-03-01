@@ -11,9 +11,9 @@ Docker環境がある場合は，[yaegasikk/olab-attention](https://hub.docker.c
 ### 1. UCF-CrimeデータセットのI3D特徴量の抽出
 [RTFMの実装](https://github.com/tianyu0207/RTFM)と同様の特徴量を使用しています．他のデータセットに対して実験を行う場合は[I3D_Feature_Extraction_resnet](https://github.com/GowthamGottimukkala/I3D_Feature_Extraction_resnet)を用いて特徴量抽出をおこなってください．
 
-* **UCF-Crime train i3d Google drive**から学習データをダウンロードし，フォルダ名を`UCF-Train`に変更後，`features/train` に入れてください．
+* **UCF-Crime train i3d Google drive**から学習データをダウンロードし，フォルダ名を`UCF-Train`に変更後，`features` に入れてください．
   * 学習済みモデルを用いて論文の結果を再現するだけであれば、この学習データのダウンロードは省略できます．
-* **UCF-Crime test i3d Google drive**からテストデータをダウンロードし，フォルダ名を`UCF-Test`に変更後，`features/test` に入れてください．
+* **UCF-Crime test i3d Google drive**からテストデータをダウンロードし，フォルダ名を`UCF-Test`に変更後，`features` に入れてください．
 
 <pre>
 .
