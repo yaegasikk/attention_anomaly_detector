@@ -8,7 +8,7 @@
 
 ## データの準備
 ### 1. UCF-CrimeデータセットのI3D特徴量の抽出
-[RTFMの実装](https://github.com/tianyu0207/RTFM)と同様の特徴量を使用しています．他のデータセットに対して実験を行う場合は[I3D_Feature_Extraction_resnetの実装](https://github.com/GowthamGottimukkala/I3D_Feature_Extraction_resnet)を用いて特徴量抽出をおこなってください．
+[RTFMの実装](https://github.com/tianyu0207/RTFM)と同様の特徴量を使用しています．他のデータセットに対して実験を行う場合は[I3D_Feature_Extraction_resnet](https://github.com/GowthamGottimukkala/I3D_Feature_Extraction_resnet)を用いて特徴量抽出をおこなってください．
 
 * **UCF-Crime train i3d Google drive**から学習データをダウンロードし，`feature/train` に入れてください．
   * 学習済みモデルを用いて論文の結果を再現するだけであれば、この学習データのダウンロードは省略できます．
