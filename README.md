@@ -54,9 +54,8 @@ python test.py --da 128 --r 7
 |Sultani et al.|75.41|
 |GCN-Anomaly|82.12|
 |RTFM|84.30|
-|----|----|
-|Ours(<img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " />)|84.74|
-|Ours(<img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " />)|84.91|
+|Ours( <img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " /> )|84.74|
+|Ours( <img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " /> )|84.91|
 
 ## 学習
 ```
