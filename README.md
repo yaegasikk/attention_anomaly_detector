@@ -1,1 +1,1 @@
-# attention_anomaly_detector
+# 顕著な特徴抽出による現実世界での異常検出
