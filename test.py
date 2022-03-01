@@ -19,6 +19,7 @@ if __name__=='__main__':
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     torch.backends.cudnn.benchmark = True
     da_list = [128]
+    
     r_list = [7]
 
     test_data = Dataset(args,test_mode=True,is_normal=False,is_onmemory=True)
