@@ -18,9 +18,8 @@ if __name__=='__main__':
     
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     torch.backends.cudnn.benchmark = True
-    da_list = [128]
-    
-    r_list = [7]
+    da_list = [args.da]
+    r_list = [args.r]
 
     test_data = Dataset(args,test_mode=True,is_normal=False,is_onmemory=True)
     test_dataloader = DataLoader(test_data,batch_size=1,shuffle=False)
@@ -31,7 +30,7 @@ if __name__=='__main__':
             model = VideoClassifier(args,r=r,da=da)
             model_name = model_name = 'SelfAttention-da{}-r{}'.format(da,r)
             model.load_state_dict(torch.load('save_weight/{}-T{}-seed{}.pth'.format(model_name,args.T,args.seed)))
-            auc_score,_,_ = split_cal_auc_videoclassifier(model,test_dataloader,device)
+            auc_score,_,_ = split_cal_auc_videoclassifier(model,test_dataloader,device,split_size=28)
             aucs[i].append(auc_score)
             print('model : {} , auc_score : {}'.format(model_name,auc_score))
     
