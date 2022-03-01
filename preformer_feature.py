@@ -15,7 +15,7 @@ def process_feat(feat, length):
 
 save_prefeature_path = './preformer_features'
 test_list = list(open('./list/ucf-i3d-test-base.list'))
-test_base_path = os.path.join(os.getcwd(),'feature/test')
+test_base_path = os.path.join(os.getcwd(),'features/UCF-Test')
 train_list = list(open('./list/ucf-i3d-train-base.list'))
 
 test_pre_list = []
@@ -26,8 +26,8 @@ for test_i in tqdm(test_list):
 f = open('list/ucf-i3d-test.list','w')
 f.writelines(test_pre_list)
 f.close()
-
-os.makedirs(save_prefeature_path)
+if not os.path.isdir(save_prefeature_path):
+    os.makedirs(save_prefeature_path)
 train_pre_list = []
 for train_i in tqdm(train_list):
     if (os.path.exists(train_i.strip('\n')) == False):

@@ -10,20 +10,20 @@
 ### 1. UCF-CrimeデータセットのI3D特徴量の抽出
 [RTFMの実装](https://github.com/tianyu0207/RTFM)と同様の特徴量を使用しています．他のデータセットに対して実験を行う場合は[I3D_Feature_Extraction_resnet](https://github.com/GowthamGottimukkala/I3D_Feature_Extraction_resnet)を用いて特徴量抽出をおこなってください．
 
-* **UCF-Crime train i3d Google drive**から学習データをダウンロードし，`feature/train` に入れてください．
+* **UCF-Crime train i3d Google drive**から学習データをダウンロードし，`features/train` に入れてください．
   * 学習済みモデルを用いて論文の結果を再現するだけであれば、この学習データのダウンロードは省略できます．
-* **UCF-Crime test i3d Google drive**からテストデータをダウンロードし，`feature/test` に入れてください．
+* **UCF-Crime test i3d Google drive**からテストデータをダウンロードし，`features/test` に入れてください．
 
 <pre>
 .
 |-- dataset.py
-|-- feature
-|    |-- test
+|-- features
+|    |-- UCF-Test
 |    |  |-- Abuse028_x264_i3d.npy
 |    |  |-- Abuse030_x264_i3d.npy
 |    |  |-- Arrest001_x264_i3d.npy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-|    |-- train
+|    |-- UCF-Train
 |    |  |-- Abuse001_x264_i3d.npy
 |    |  |-- Abuse002_x264_i3d.npy
 |    |  |-- Abuse003_x264_i3d.npy
@@ -43,11 +43,11 @@ UCF-CrimeデータセットにおけるフレームレベルのAUCの性能を�
 
 <img src="https://latex.codecogs.com/svg.image?d_a=64,r=3&space;" title="d_a=64,r=3 " /> のとき
 ```
-python test.py --da 64 --r 3
+python test.py --da 64 --r 3 --seed 9111
 ```
 <img src="https://latex.codecogs.com/svg.image?d_a=128,r=7&space;" title="d_a=128,r=7 " /> のとき
 ```
-python test.py --da 128 --r 7
+python test.py --da 128 --r 7 --seed 9111
 ```
 | model | AUC(%)|
 |----|----|

@@ -30,7 +30,7 @@ if __name__=='__main__':
             model = VideoClassifier(args,r=r,da=da)
             model_name = model_name = 'SelfAttention-da{}-r{}'.format(da,r)
             model.load_state_dict(torch.load('save_weight/{}-T{}-seed{}.pth'.format(model_name,args.T,args.seed)))
-            auc_score,_,_ = split_cal_auc_videoclassifier(model,test_dataloader,device,split_size=28)
+            auc_score,_,_ = split_cal_auc_videoclassifier(model,test_dataloader,device,split_size=args.test_split_size)
             aucs[i].append(auc_score)
             print('model : {} , auc_score : {}'.format(model_name,auc_score))
     

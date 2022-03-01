@@ -2,7 +2,6 @@ import torch
 from torch.utils.data import DataLoader
 import torch.optim as optim
 from torch import nn
-from network.mil import Simple_detector_lstm_swish_model,Simple_detector_model,custom_objective,RegularizedLoss
 from tqdm import tqdm
 import option
 from dataset import Dataset
