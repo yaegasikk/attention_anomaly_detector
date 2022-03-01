@@ -6,6 +6,7 @@
 * scikit-learn : 0.24.2
 * tqdm :　4.46.0
 
+Docker環境がある場合は，[yaegasikk/olab-attention](https://hub.docker.com/repository/docker/yaegasikk/olab-attention)からイメージを入手し，利用できます．
 ## データの準備
 ### 1. UCF-CrimeデータセットのI3D特徴量の抽出
 [RTFMの実装](https://github.com/tianyu0207/RTFM)と同様の特徴量を使用しています．他のデータセットに対して実験を行う場合は[I3D_Feature_Extraction_resnet](https://github.com/GowthamGottimukkala/I3D_Feature_Extraction_resnet)を用いて特徴量抽出をおこなってください．
